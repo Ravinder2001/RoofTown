@@ -1,0 +1,82 @@
+.payments {
+    display: grid; 
+    grid-template-columns: 4% 17% 10% 9% 16% 16% 27%;
+    grid-template-rows: 1fr; 
+    height: 50px;
+    border-bottom: 1px solid #C0C0C0;
+    margin-left: 5px;
+    margin-right: 5px;
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "status pspReference paymentMethod amount date account merchantReference eventCode"; 
+  }
+
+.status { 
+  grid-area: status;
+  margin-left: 18px;
+  margin-top: 6px;
+  font-size: 32px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.pspReference { 
+  grid-area: pspReference; 
+  margin-left: 15px;
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+.paymentMethod { 
+  margin-left: 10px;
+  font-size: 14px;
+  grid-area: paymentMethod; 
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.amount { 
+    margin-left: 10px;
+    grid-area: amount; 
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+.currency { 
+    display: inline-flex;
+    margin-right: 10px;
+    font-size: 13px;
+
+}
+
+.amount2 { 
+    display: inline-flex;
+    font-size: 14px;
+
+}
+
+.date { 
+    /* margin-left: 10px; */
+    font-size: 14px;
+    grid-area: date; 
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+.account { 
+    /* margin-left: 10px; */
+    font-size: 14px;
+    grid-area: account; 
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+.merchantReference{
+    /* margin-left: 10px; */
+    font-size: 14px;
+    grid-area: merchantReference; 
+    margin-top: auto;
+    margin-bottom: auto;
+}

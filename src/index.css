@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #ffffff;
+  padding: 0 16px;
+}
+
+button,
+input[type="color"],
+input[type="range"] {
+  cursor: pointer;
+}
+
+.mainContainer {
+  margin: 5px 0%;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-right: auto;
+  margin-left: auto;
+  /* max-width: 1630px */
+}
+
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --border-off: 1px solid #e6e9eb;
+  --background-color: #00112c;
+  --dropin-color: #f7f8f9;
+  --dropin-tab-color: #ffffff;
+  --background-color: #00112c;
+  --font-options: "Segoe UI", sans-serif;
+  --dropin-width: 100%;
+  --dropin-font: 16px;
+  --button-edges: 10px;
+  --text-align: left;
+  --text-bold: normal;
+  --payButton-width: 466px;
+  --paymentselected-margin: 8px 0;
+  --selectedBody-edges: 12px;
+  --topedges-left: 12px;
+  --topedges-right: 12px;
+  --bottomedges-left: 12px;
+  --bottomedges-right: 12px;
+  --selectedBorder-color: #e6e9eb;
+  --text-color: #00112c;
+  --payText-color: #ffffff;
+  --selectedBorder-width: 1px;
+  --payments-spacing: 0;
+}
+
+.adyen-checkout__payment-method {
+  width: var(--dropin-width) !important;
+  font-size: var(--dropin-font) !important;
+  font-family: var(--font-options) !important;
+  text-align: var(--text-align) !important;
+  border-radius: var(--body-edges) !important;
+  border: var(--border-off) !important;
+  background: var(--dropin-tab-color) !important;
+  font-weight: var(--text-bold) !important;
+  margin: var(--payments-spacing) !important;
+}
+
+.adyen-checkout__label__text {
+  font-weight: var(--text-bold) !important;
+  color: var(--text-color) !important;
+}
+
+.adyen-checkout__button__text {
+  font-weight: var(--text-bold) !important;
+  color: var(--payText-color) !important;
+}
+
+.adyen-checkout__payment-method--selected {
+  border-style: solid !important;
+  background: var(--dropin-color) !important;
+  margin: var(--paymentselected-margin) !important;
+  border-radius: var(--selectedBody-edges) !important;
+  border: var(--border-off) !important;
+  border-width: var(--selectedBorder-width) !important;
+  border-color: var(--selectedBorder-color) !important;
+}
+
+.adyen-checkout__button,
+.adyen-checkout__button--pay {
+  width: var(--payButton-width) !important;
+  max-width: 100% !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  display: flex;
+  justify-content: center;
+  background: var(--background-color) !important;
+  border-radius: var(--button-edges) !important;
+}
+
+.adyen-checkout__payment-method__header__title,
+.adyen-checkout__button {
+  font-family: inherit;
+}
+
+.adyen-checkout__payment-method__name,
+.adyen-checkout__issuer-button-text,
+.adyen-checkout__checkbox__label,
+.adyen-checkout__dropdown__button__text,
+.adyen-checkout__dropdown__element {
+  font-weight: var(--text-bold) !important;
+  color: var(--text-color) !important;
+}
+
+.adyen-checkout__payment-method--selected + .adyen-checkout__payment-method,
+.adyen-checkout__payment-method:first-child:not(
+    .adyen-checkout__payment-method--selected
+  ) {
+  border-top-left-radius: var(--topedges-left) !important;
+  border-top-right-radius: var(--topedges-right) !important;
+}
+
+.adyen-checkout__payment-method--next-selected,
+.adyen-checkout__payment-method:last-child:not(
+    .adyen-checkout__payment-method--selected
+  ) {
+  border-bottom-left-radius: var(--bottomedges-left) !important;
+  border-bottom-right-radius: var(--bottomedges-right) !important;
+}
+
+input[type="color"] {
+  padding: 0;
+  width: 150%;
+  height: 150%;
+  margin: -25%;
+}
+
+.type-color {
+  overflow: hidden;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+}
+
+.rs-picker-toggle {
+  border: none !important;
+}
+.rs-picker-menu {
+  z-index: 9999 !important;
+}
+/* .rs-picker-toolbar {
+  display: none !important;
+} */
+.rs-picker-daterange-header {
+  display: none !important;
+}
+
+.rs-picker-toolbar-ranges {
+  display: none !important;
+}
+.rs-picker-daterange {
+  width: 245px !important;
+}
+.rs-picker-toggle-clean {
+  display: none !important;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+.btn-primary {
+  background-color: rgb(253, 252, 252) !important;
+  border-color: black !important;
+}
+.btn-primary svg {
+  stroke: black !important;
+}
+
+ /* latest */
+.rdrDefinedRangesWrapper {
+  display: none !important;
+}

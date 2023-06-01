@@ -1,0 +1,46 @@
+.notificationToggle {
+  margin-top: 40px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paymentNotifications {
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  height: 40px;
+  /* border: 0; */
+  width: 200px;
+  /* background: #f8f9fa; */
+  background: #100c08;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.balanceNotifications {
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  height: 40px;
+  /* border: 2px solid black; */
+  width: 200px;
+  background: #f8f9fa;
+  margin-left: 20px;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.webhookContainer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  padding-top: 10px;
+  width: 80%;
+  background: #f8f9fa;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  height: 1160px;
+}

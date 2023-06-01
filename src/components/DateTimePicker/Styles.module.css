@@ -1,0 +1,13 @@
+.dateFilter {
+  display: inline-flex;
+  margin-left: 10px;
+  border: 1px solid #707070;
+  font-size: small;
+  color: #505050;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+.dateFilter:focus {
+  display: none !important;
+}

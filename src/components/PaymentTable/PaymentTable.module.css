@@ -1,0 +1,66 @@
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+.thead {
+  height: 10%;
+  background-color: rgb(228, 227, 227);
+  top: 0;
+  position: sticky;
+}
+
+.thead th {
+  border: 1px solid black;
+  padding: 10px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-family: 14px;
+  font-weight: 100;
+}
+
+.tbody {
+  max-height: 80%;
+  overflow: auto;
+}
+
+.tbody tr {
+  border-bottom: 1px solid rgb(184, 182, 182);
+  /* height: 100px; */
+}
+.tbody td {
+  padding: 10px;
+  min-width: 50px;
+  max-width: 200px;
+  border: 1px solid rgb(203, 202, 202);
+  font-family: "Montserrat", sans-serif;
+  font-family: 14px;
+}
+.MenuList {
+  height: 200px;
+  overflow: auto;
+  padding: 10px;
+}
+.MenuList div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.status {
+  font-size: 32px;
+}
+
+.resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  cursor: col-resize;
+  user-select: none;
+}
+
+.resizer:hover,
+.resizing {
+  border-right: 2px solid blue;
+}

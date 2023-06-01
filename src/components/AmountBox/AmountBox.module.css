@@ -1,0 +1,71 @@
+.box {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  background-color: white;
+  top: 35px;
+  left: 0px;
+  z-index: 99999;
+  border-radius: 5px;
+}
+.heading{
+  font-weight: bold;
+}
+.btnGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.cancel {
+  color: #0065ff;
+  border: 1px solid rgb(193, 191, 191);
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+.submit {
+  background-color: #0065ff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.headerBox {
+  display: flex;
+  justify-content: space-between;
+}
+.headerBox div:nth-child(even) {
+  cursor: pointer;
+}
+
+.inputGroup {
+  display: flex;
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  overflow: hidden;
+}
+.inputBox {
+  width: 50%;
+  /* border: 1px solid green; */
+}
+.input {
+  width: 90%;
+  border: 1px solid rgb(199, 197, 197);
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 2px;
+}
+.input:focus {
+  outline: none;
+  border: 2px solid #9cc2fb;
+}
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

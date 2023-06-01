@@ -1,0 +1,48 @@
+.MenuList {
+  max-height: 600px;
+  overflow: auto;
+  padding: 10px;
+ min-width: 250px;
+ max-width: 400px;
+}
+.box {
+  margin-top: 10px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  text-decoration: none !important;
+}
+.heading {
+  color: #00122c;
+  font-weight: 600;
+}
+.check{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.text{
+  margin-left: 10px;
+cursor: pointer;
+}
+
+.MenuList::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.MenuList::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  border-radius: 10px;
+}
+
+/* Handle */
+.MenuList::-webkit-scrollbar-thumb {
+  background: #bcbbbb;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.MenuList::-webkit-scrollbar-thumb:hover {
+  background: #434242;
+}

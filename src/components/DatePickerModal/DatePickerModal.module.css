@@ -1,0 +1,86 @@
+.mainContainer {
+  width: 700px;
+  height: 380px;
+  overflow: auto;
+  margin-top: 20px;
+  margin-left: -54px;
+  position: absolute;
+  background-color: white;
+  top: 15px;
+  left: 50px;
+  z-index: 99999;
+  padding: 10px;
+  border-radius: 5px;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  flex-direction: row;
+
+}
+.menu {
+  /* margin-left: 260px; */
+  margin-right: 10px;
+  height: 88%;
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 300px;
+}
+.heading {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.container {
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid rgb(222, 220, 220);
+  border-radius: 7px;
+  margin-right: 10px;
+}
+.container > div:first-child {
+  border-right: 1px solid gray;
+}
+.container > div {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+}
+.DateBox {
+  margin-top: 20px;
+}
+.btnGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-right: 10px;
+}
+.cancel {
+  color: #0065ff;
+  border: 1px solid rgb(193, 191, 191);
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+.submit {
+  background-color: #0065ff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.cross {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.inputDate{
+  border: none;
+  cursor: pointer;
+}

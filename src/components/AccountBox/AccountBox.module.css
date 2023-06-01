@@ -1,0 +1,90 @@
+.box {
+  min-width: 300px;
+  max-width: 450px;
+  min-height: 100px;
+  max-height: 300px;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  background-color: white;
+  top: 35px;
+  left: 0px;
+  z-index: 99999;
+  border-radius: 5px;
+}
+.heading {
+  font-weight: bold;
+  font-size: 14px;
+}
+.selectBox {
+  width: 100%;
+  margin-top: 10px;
+}
+.listBox {
+  margin-top: 20px;
+}
+.listItem {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.listItem div:nth-child(even) {
+  margin-left: 10px;
+}
+.listItem div:nth-child(odd) {
+  cursor: pointer;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: lightgray;
+}
+.cancel {
+  color: #0065ff;
+  border: 1px solid rgb(193, 191, 191);
+  padding: 0px 12px;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  width: 56px;
+  height: 24px;
+}
+.submit {
+  background-color: #0065ff;
+  color: white;
+  padding: 0px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  width: 56px;
+  height: 24px;
+}
+.headerBox {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+.headerBox div:nth-child(even) {
+  cursor: pointer;
+}
+.select {
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+  padding-left: 12px;
+  border-radius: 5px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #06f;
+}
+.select option {
+  cursor: pointer;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+}

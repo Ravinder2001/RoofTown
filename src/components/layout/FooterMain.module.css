@@ -1,0 +1,29 @@
+.footerMain{
+  background-color: #f8f9fa!important;
+  border-top:1px solid hsl(204, 11%, 91%);
+  border-radius: 7px;
+  bottom: 0px;
+  color:#687282;
+  height: 100px;
+  width: 100%;
+}
+
+.footerMainLink {
+  color: #000000;
+  font-size: 13px;
+  margin: 10px 20px;
+}
+
+.footerMainBar {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerMainCopyright {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

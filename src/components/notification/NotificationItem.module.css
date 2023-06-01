@@ -1,0 +1,54 @@
+.notification {
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: 19fr 20fr 19fr;
+  grid-template-rows: 1fr;
+  height: 50px;
+  border-bottom: 1px solid #c0c0c0;
+  margin-left: 5px;
+  margin-right: 5px;
+  gap: 0px 0px;
+  grid-template-areas: "timestamp eventcode pspreference";
+}
+
+.notification:hover {
+  border: 1px solid #06f;
+}
+.notification:active {
+  border: 2px solid #06f;
+}
+
+.timestamp {
+  grid-area: timestamp;
+  margin-left: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: black;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.eventcode {
+  grid-area: eventcode;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+.pspreference {
+  margin-left: 10px;
+  font-size: 15px;
+  grid-area: pspreference;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: black;
+}

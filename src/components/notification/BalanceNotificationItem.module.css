@@ -1,0 +1,43 @@
+.notification {
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: 4fr 5fr 3fr;
+  grid-template-rows: 1fr;
+  height: 50px;
+  padding-left: 5px;
+  border-bottom: 1px solid #c0c0c0;
+  gap: 0px 0px;
+  grid-template-areas: "timestamp type balancePlatform";
+}
+
+.notification:hover {
+  border: 1px solid #06f;
+}
+.notification:active {
+  border: 2px solid #06f;
+}
+
+.timestamp {
+  grid-area: timestamp;
+  margin-left: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 14px;
+}
+
+.type {
+  grid-area: type;
+  margin-left: 8px;
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: bold;
+}
+
+.balancePlatform {
+  margin-left: 10px;
+  font-size: 14px;
+  grid-area: balancePlatform;
+  margin-top: auto;
+  margin-bottom: auto;
+}

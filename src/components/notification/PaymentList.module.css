@@ -1,0 +1,366 @@
+.paymentContainer {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding-top: 10px;
+  width: 80%;
+  height: 630px;
+  overflow: hidden;
+  background: #f8f9fa;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 70px 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "paymentListSearch"
+    "paymentListFilter"
+    "paymentListContainer";
+}
+
+.paymentListSearch {
+  grid-area: paymentListSearch;
+}
+
+.paymentSearchItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  height: 75%;
+  margin-top: 5px;
+  /* margin-bottom: 5px; */
+  margin-left: 10px;
+  margin-right: 10px;
+  /* grid-template-columns: 3% 97%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "notificationSearchIcon notificationSearchText"; */
+}
+
+.paymentSearchIcon {
+  /* margin-top: 3px; */
+  margin-left: 10px;
+  width: 2%;
+}
+.paymentSearchText {
+  width: 98%;
+}
+
+.paymentTextSearch {
+  height: 30px;
+  /* margin-top: 4px; */
+  border: 0;
+  background-color: transparent;
+  width: 100%;
+  padding-left: 10px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+.paymentSearchItem:focus-within {
+  border: 2px solid #9cc2fb;
+}
+
+/* .notificationTextSearch:focus { 
+  border: 1px solid blue;
+  border-radius: 10px;
+} */
+
+.paymentTextSearch:focus {
+  outline: none;
+}
+
+.paymentListFilter {
+  display: flex;
+  /* border: 1px solid black; */
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 5px; */
+  /* padding-bottom: 10px; */
+  margin: 10px;
+
+  margin-top: -9px;
+  /* grid-area: paymentListFilter; */
+}
+.paymentListFilter > div {
+  display: flex;
+  align-items: center;
+}
+
+.methodFilter {
+  display: inline-flex;
+  /* margin-left: 5px; */
+  border: 1px solid #707070;
+  height: 30px;
+  max-width: 130px;
+  /* width: 100px; */
+  font-size: small;
+  color: #505050;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.accountFilter {
+  display: inline-flex;
+  margin-left: 10px;
+  border: 1px solid #707070;
+  height: 30px;
+  width: auto;
+  padding: 0px 20px;
+  /* font-size: small; */
+  color: #505050;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+
+}
+.accountFilter > div {
+  cursor: pointer;
+}
+
+.amountFilter {
+  /* display: inline-flex; */
+  margin-left: 10px;
+  border: 1px solid #707070;
+  height: 45px;
+  width: 200px;
+  font-size: small;
+  color: #505050;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 4px;
+}
+.amountDiv {
+  height: 5px;
+}
+.amountValues {
+  font-size: 12px;
+  margin-top: 4px;
+}
+.amountFilter > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statusFilter {
+  display: inline-flex;
+  margin-left: 10px;
+  border: 1px solid #707070;
+  height: 30px;
+  width: 80px;
+  /* font-size: small; */
+  color: #505050;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  position: relative;
+}
+.statusFilter > div {
+  cursor: pointer;
+}
+.dateBox {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+/* .dateFilter {
+  display: inline-flex;
+  margin-left: 10px;
+  border: 1px solid #707070;
+  height: 45px;
+  width: 250px;
+  font-size: small;
+  color: #505050;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+} */
+
+.resetFilter {
+  cursor: pointer;
+  display: inline-flex;
+  margin-left: 10px;
+  border: 1px solid #707070;
+  height: 30px;
+  width: 80px;
+  font-size: small;
+  color: #505050;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3d3d3;
+}
+
+.resetText {
+  margin-left: 8px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+
+.paymentListContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 45px 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "paymentListHeader"
+    "paymentList";
+  grid-area: paymentListContainer;
+}
+
+.paymentListHeader {
+  display: grid;
+  grid-template-columns: 60px 16% 10% 8% 16% 16% 25% 45px;
+  grid-template-rows: 1fr;
+  height: 45px;
+  border-bottom: 2px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "status pspReference paymentMethod amount date account merchantReference eventCode filter";
+  grid-area: paymentListHeader;
+}
+
+.pspReference {
+  grid-area: pspReference;
+  font-size: 14px;
+  border-right: 1px solid #707070;
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.merchantReference {
+  grid-area: merchantReference;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.account {
+  grid-area: account;
+  margin-left: 10px;
+  border-right: 1px solid #707070;
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.date {
+  grid-area: date;
+  margin-left: 10px;
+  border-right: 1px solid #707070;
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.amount {
+  grid-area: amount;
+  margin-left: 10px;
+  border-right: 1px solid #707070;
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.paymentMethod {
+  grid-area: paymentMethod;
+  margin-left: 10px;
+  border-right: 1px solid #707070;
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.status {
+  grid-area: status;
+  border-right: 1px solid #707070;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.filter {
+  grid-area: filter;
+  border-left: 2px solid #707070;
+  /* border-right: 2px solid #707070; */
+  /* height: 45px;
+  width: 45px; */
+  /* padding-top: 8px; */
+  /* padding-left: 6px; */
+  margin-bottom: auto;
+  float: right;
+  text-align: center;
+}
+
+.paymentList {
+  margin-top: 0;
+  padding-top: 0;
+  grid-area: paymentList;
+  overflow: scroll;
+  height: 500px;
+}
+.filterInput {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  padding-left: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+.filterInput:focus {
+  outline: none;
+}
+
+.tableBox {
+  height: 100%;
+  overflow: auto;
+  width: 98%;
+  margin: auto;
+}
+/* width */
+.tableBox::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.tableBox::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  border-radius: 10px;
+}
+
+/* Handle */
+.tableBox::-webkit-scrollbar-thumb {
+  background: #bcbbbb;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.tableBox::-webkit-scrollbar-thumb:hover {
+  background: #434242;
+}
+
+
+#account{
+  position: relative;
+}
+#amount{
+  position: relative;
+}

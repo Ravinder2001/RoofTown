@@ -1,0 +1,273 @@
+.notificationContainer {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f8f9fa;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 70px 1fr;
+  grid-template-areas: "notificationSearch", "notificationFilter",
+    "notificationContainer1";
+}
+
+.notificationFilter {
+  display: inline-flex;
+  border-bottom: 1px solid black;
+  align-items: center;
+  margin-top: -9px;
+}
+
+.eventCodeFilter {
+  display: inline-flex;
+  margin-left: 20px;
+  border: 1px solid #707070;
+  height: 30px;
+  width: 90px;
+  font-size: small;
+  color: #505050;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dateBoxFilter{
+  display: inline-flex;
+  border: 1px solid #707070;
+  margin-left: 10px;
+  height: 30px;
+  width: 80px;
+  font-size: small;
+  color: #505050;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.accountFilter {
+  display: inline-flex;
+  margin-left: 10px;
+  border: 1px solid #707070;
+  height: 30px;
+  width: 130px;
+  font-size: small;
+  color: #505050;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.accountFilter > div {
+  cursor: pointer;
+}
+
+.dateBox {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.resetFilter {
+  display: inline-flex;
+  margin-left: 10px;
+  border: 1px solid #707070;
+  height: 30px;
+  width: 80px;
+  font-size: small;
+  color: #505050;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+
+.resetText {
+  margin-left: 8px;
+}
+
+.notificationSearchItem {
+  display: grid;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 75%;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-template-columns: 3% 97%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "notificationSearchIcon notificationSearchText";
+}
+.notificationSearchItem:focus-within {
+  border: 2px solid #06f;
+}
+.notificationSearchIcon {
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+.notificationTextSearch {
+  height: 30px;
+  margin-top: 4px;
+  border: 0;
+  background-color: transparent;
+  width: 97%;
+  padding-left: 10px;
+}
+
+.notificationTextSearch:focus {
+  outline: none;
+}
+
+.CallbackContainer {
+  display: grid;
+  grid-template-columns: 49% 51%;
+  grid-template-rows: 1fr;
+  height: 1030px;
+  gap: 6px 2px;
+  grid-template-areas: "notificationList notificationBody";
+}
+
+.notificationList {
+  border-right: 1px solid black;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 45px 950px 35px;
+  gap: 0px 25px;
+  grid-template-areas:
+    "BalanceNotificationListHeader"
+    "notificationListTotal"
+    "notificationListSwiper";
+}
+
+.BalanceNotificationListHeader {
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: 4fr 5fr 3fr;
+  grid-template-rows: 1fr;
+  height: 45px;
+  border-bottom: 2px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
+  gap: 0px 0px;
+  grid-template-areas: "timestamp type balancePlatform";
+}
+
+.notificationListTotal {
+  overflow-wrap: break-word;
+  overflow: scroll;
+}
+
+.notificationListSwiper {
+  border-top: 2px solid black;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "page arrows";
+}
+
+.arrows {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: auto;
+  font-weight: bold;
+  margin-bottom: auto;
+  padding-top: 5px;
+  gap: 0px 0px;
+  grid-template-areas: "arrowBack arrowPrev arrowNext";
+}
+
+.arrowBack {
+  /* border-right: 2px solid #505050; */
+}
+
+.page {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #505050;
+}
+
+.timestamp {
+  grid-area: timestamp;
+  margin-left: 10px;
+  margin-top: auto;
+  font-weight: bold;
+  margin-bottom: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.type {
+  grid-area: type;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  margin-left: 8px;
+  color: black;
+}
+
+.balancePlatform {
+  margin-left: 10px;
+  grid-area: balancePlatform;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.notificationbody {
+  overflow-wrap: break-word;
+  overflow: scroll;
+}
+
+pre {
+  font-size: 13.5px;
+  margin-left: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* /// */
+.filterInput {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+.filterInput:focus {
+  outline: none;
+}
+.dateFilter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  border: 1px solid #707070;
+  height: 37px;
+  width: 250px;
+  font-size: small;
+  color: #505050;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+#account {
+  position: relative;
+  cursor: pointer;
+}
+#date {
+  position: relative;
+}
