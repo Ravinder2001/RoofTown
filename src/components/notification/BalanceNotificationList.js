@@ -75,6 +75,7 @@ const BalanceNotificationList = () => {
     setTypeShow(false);
     setBalanceShow(false);
     setReset(!Reset);
+    setPage(1);
   };
 
   function isNotification(notification) {
@@ -95,8 +96,13 @@ const BalanceNotificationList = () => {
       balance.length == 0 &&
       type.length == 0
     ) {
+      const startIndex = (Page - 1) * rowPerPage;
+      const endIndex = startIndex + rowPerPage;
+      const PaginatedData = temp.slice(startIndex, endIndex);
+
+      setData(PaginatedData);
       setTemp(balanceNotification);
-      return setData(balanceNotification);
+      return;
     } else {
       let stack = balanceNotification?.filter((e) => {
         const targetDate = new Date(e.timestamp);
@@ -115,7 +121,9 @@ const BalanceNotificationList = () => {
         };
         const TypeFilter = () => {
           if (type.length) {
-            const data = type.map((item) => e.type == item);
+            const data = type.map(
+              (item) => e.type.split(".").slice(1).join(".") == item
+            );
             return data.some((e) => e);
           } else {
             return true;

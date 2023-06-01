@@ -76,6 +76,7 @@ const NotificationList = () => {
     setAccountShow(false);
     setEventShow(false);
     setReset(!Reset);
+    setPage(1)
   };
 
   function isNotification(notification) {
@@ -96,8 +97,12 @@ const NotificationList = () => {
       account.length == 0 &&
       event.length == 0
     ) {
+      const startIndex = (Page - 1) * rowPerPage;
+      const endIndex = startIndex + rowPerPage;
+      const PaginatedData = paymentNotification.slice(startIndex, endIndex);
       setTemp(paymentNotification);
-      return setData(paymentNotification);
+      setData(PaginatedData);
+      return;
     } else {
       let stack = paymentNotification?.filter((e) => {
         const targetDate = new Date(e.timestamp);
