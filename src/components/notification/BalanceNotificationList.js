@@ -148,7 +148,10 @@ const BalanceNotificationList = () => {
   useEffect(() => {
     balanceNotification?.forEach((e) => {
       if (e.type != "") {
-        setTypeList((ele) => [...ele.filter((item) => item != e.type), e.type]);
+        setTypeList((ele) => [
+          ...ele.filter((item) => item != e.type.split(".").slice(1).join(".")),
+          e.type.split(".").slice(1).join("."),
+        ]);
       }
       if (e.balanceplatform != "") {
         setBalanceList((ele) => [
